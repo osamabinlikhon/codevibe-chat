@@ -1,11 +1,10 @@
 {
-  "servers": {
+  "mcpServers": {
     "vercel": {
       "type": "http",
       "url": "https://mcp.vercel.com",
       "auth": "oauth",
-      "enabled": true,
-      "description": "Vercel project management, deployments, and documentation"
+      "enabled": true
     },
     "chrome-devtools": {
       "command": "npx",
@@ -14,12 +13,7 @@
         "chrome-devtools-mcp@latest",
         "--browser-url=http://127.0.0.1:9222"
       ],
-      "enabled": true,
-      "description": "Chrome DevTools protocol integration for browser automation"
+      "enabled": true
     }
-  },
-  "defaults": {
-    "timeout": 30000,
-    "retry": 3
   }
 }

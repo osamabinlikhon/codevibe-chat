@@ -4,7 +4,8 @@
       "type": "http",
       "url": "https://mcp.vercel.com",
       "auth": "oauth",
-      "enabled": true
+      "enabled": true,
+      "description": "Vercel project management, deployments, and documentation"
     },
     "github": {
       "type": "http",
@@ -12,7 +13,18 @@
       "headers": {
         "Authorization": "Bearer ${env:GITHUB_MCP_TOKEN}"
       },
-      "enabled": true
+      "enabled": true,
+      "description": "GitHub repository management, issues, PRs, and workflows"
+    },
+    "chrome-devtools": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "chrome-devtools-mcp@latest",
+        "--browser-url=http://127.0.0.1:9222"
+      ],
+      "enabled": true,
+      "description": "Chrome DevTools protocol integration for browser automation and debugging"
     }
   },
   "defaults": {
