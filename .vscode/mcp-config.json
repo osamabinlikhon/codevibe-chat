@@ -1,0 +1,20 @@
+{
+  "$schema": https://json.schemastore.org/climate-data-v1.2.json,
+  "servers": {
+    "github-mcp": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": "Bearer ${env:GITHUB_PAT}"
+      }
+    }
+  },
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "github_pat",
+      "description": "GitHub Personal Access Token for MCP Server",
+      "password": true
+    }
+  ]
+}

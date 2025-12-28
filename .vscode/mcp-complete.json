@@ -1,0 +1,22 @@
+{
+  "servers": {
+    "vercel": {
+      "type": "http",
+      "url": "https://mcp.vercel.com",
+      "auth": "oauth",
+      "enabled": true
+    },
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": "Bearer ${env:GITHUB_MCP_TOKEN}"
+      },
+      "enabled": true
+    }
+  },
+  "defaults": {
+    "timeout": 30000,
+    "retry": 3
+  }
+}

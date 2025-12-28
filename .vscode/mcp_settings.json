@@ -1,0 +1,12 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Microsoft/vscode-mcp/main/schema.json",
+  "servers": {
+    "github-mcp": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": "Bearer ${env:GITHUB_PAT}"
+      }
+    }
+  }
+}

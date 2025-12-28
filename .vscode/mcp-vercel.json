@@ -1,0 +1,10 @@
+{
+  "servers": {
+    "vercel": {
+      "type": "http",
+      "url": "https://mcp.vercel.com",
+      "auth": "oauth",
+      "scope": ["projects:read", "deployments:read", "logs:read"]
+    }
+  }
+}
