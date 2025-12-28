@@ -12,8 +12,8 @@ import {
   type NewFeedback,
   type CodeSnippet,
   type NewCodeSnippet,
-} from '../db/schema';
-import { eq, desc, asc, and, like } from 'drizzle-orm';
+} from '../../db/schema';
+import { eq, desc, asc, like } from 'drizzle-orm';
 
 // ==================== Chat Sessions ====================
 
